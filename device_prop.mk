@@ -76,7 +76,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.imx376_ofilm.low.lux=290 \
 	persist.vendor.imx376_ofilm.light.lux=275 \
 	persist.vendor.bokeh.switch.lux=290 \
-	persist.vendor.camera.exif.make=Xiaomi
+	persist.vendor.camera.exif.make=Xiaomi \
 	vendor.camera.aux.packagelist=com.android.camera
 
 # Dual SIM
