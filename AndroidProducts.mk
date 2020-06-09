@@ -21,11 +21,11 @@
 # definition file).
 #
 
-# inherit MI 8 Lite Havoc device config
+# inherit MI 8 Lite 404 device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_platina.mk
+    $(LOCAL_DIR)/p404_platina.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_platina-eng \
-    havoc_platina-userdebug \
-    havoc_platina-user
+    p404_platina-eng \
+    p404_platina-userdebug \
+    p404_platina-user

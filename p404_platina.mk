@@ -29,13 +29,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/platina/device.mk)
 
-# Inherit some common Havoc stuff.
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+# Inherit some common 404 stuff.
+$(call inherit-product, vendor/p404/config/common_full_phone.mk)
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080x2280
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="platina" \
     TARGET_DEVICE="platina" \
-    PRIVATE_BUILD_DESC="coral-user 10 QQ1D.200205.002 6084393 release-keys"
+    PRIVATE_BUILD_DESC="coral-user 10 QQ3A.200605.001 6392402 release-keys"
 
 TARGET_VENDOR_PRODUCT_NAME := platina
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
@@ -43,12 +46,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := havoc_platina
+PRODUCT_NAME := p404_platina
 PRODUCT_DEVICE := platina
 PRODUCT_MODEL := MI 8 Lite
-
-# Havoc
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.havoc.maintainer=RiqueBarros
-
-export export HAVOC_BUILD_TYPE=Official
