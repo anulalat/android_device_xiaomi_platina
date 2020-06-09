@@ -32,8 +32,11 @@ $(call inherit-product, device/xiaomi/platina/device.mk)
 # Inherit some common Fusion Os stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Bootanimation
-TARGET_BOOT_ANIMATION_RES := 1080x2280
+# PixelExperience Properties
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
+CUSTOM_BUILD_TYPE := UNOFFICIAL
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="platina" \
