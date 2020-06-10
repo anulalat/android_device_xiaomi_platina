@@ -33,7 +33,7 @@ $(call inherit-product, device/xiaomi/platina/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Bootanimation
-TARGET_BOOT_ANIMATION_RES := 1080x2280
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="platina" \
