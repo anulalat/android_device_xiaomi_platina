@@ -83,10 +83,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.multisim.config=dsds
 
-# DPI
-PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.display.lcd_density=392
-
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.iwlan.enable=true \
@@ -97,7 +93,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	touch.deviceType=touchScreen \
 	touch.orientationAware=1 \
 	touch.size.calibration=diameter \
-	touch.size.scale=1 touch.size.bias=0 \
+	touch.size.scale=1 \
+	touch.size.bias=0 \
 	touch.size.isSummed=0 \
 	touch.pressure.calibration=amplitude \
 	touch.pressure.scale=0.001 \
@@ -110,10 +107,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	MultitouchMinDistance=1px \
 	TapInterval=1ms \
 	TapSlop=1px
-
-# AD and sensor config
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.display.ad=1 \
-    ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg \
-    ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg \
-    ro.vendor.display.sensortype=2
