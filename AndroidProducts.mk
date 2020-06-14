@@ -21,11 +21,11 @@
 # definition file).
 #
 
-# inherit MI 8 Lite AOSP device config
+# inherit MI 8 Lite Colt Os device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_platina.mk
+    $(LOCAL_DIR)/colt_platina.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_platina-eng \
-    aosp_platina-userdebug \
-    aosp_platina-user
+    colt_platina-eng \
+    colt_platina-userdebug \
+    colt_platina-user

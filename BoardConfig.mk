@@ -32,7 +32,7 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/wake_gesture"
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/platina
 TARGET_KERNEL_CONFIG := platina_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-elf-
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 KERNEL_TOOLCHAIN := $(PWD)/compiler/bin/
 
 # Manifest
