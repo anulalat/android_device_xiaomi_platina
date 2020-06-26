@@ -35,6 +35,8 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
+TARGET_INCLUDE_WIFI_EXT := true
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="platina" \
     TARGET_DEVICE="platina" \
