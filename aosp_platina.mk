@@ -32,11 +32,8 @@ $(call inherit-product, device/xiaomi/platina/device.mk)
 # Inherit some common Fusion Os stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# PixelExperience Properties
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_GAPPS_ARCH := arm64
+# Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
-CUSTOM_BUILD_TYPE := UNOFFICIAL
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="platina" \
@@ -53,4 +50,7 @@ PRODUCT_NAME := aosp_platina
 PRODUCT_DEVICE := platina
 PRODUCT_MODEL := MI 8 Lite
 
-export export HAVOC_BUILD_TYPE=Official
+CUSTOM_BUILD_TYPE:= OFFICIAL
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.fusion.maintainer=curse
