@@ -28,17 +28,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/platina/device.mk)
+include device/qcom/common/common.mk
 
-# Inherit some common Colt stuff.
-$(call inherit-product, vendor/colt/config/common_full_phone.mk)
+# Inherit some common Cygnus stuff.
+$(call inherit-product, vendor/cygnus/configs/common.mk)
+
+TARGET_INCLUDE_WIFI_EXT := true
 
 # Bootanimation
-TARGET_BOOT_ANIMATION_RES := 1080x2280
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="platina" \
     TARGET_DEVICE="platina" \
-    PRIVATE_BUILD_DESC="coral-user 10 QQ3A.200605.001 6392402 release-keys"
 
 TARGET_VENDOR_PRODUCT_NAME := platina
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
@@ -46,10 +48,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := colt_platina
+PRODUCT_NAME := cygnus_platina
 PRODUCT_DEVICE := platina
 PRODUCT_MODEL := MI 8 Lite
-
-# ColtOS stuffs
-COLT_BUILD_TYPE := Official
-COLT_DEVICE_MAINTAINER := Curse
