@@ -63,7 +63,7 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=420
+    ro.sf.lcd_density=392
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
