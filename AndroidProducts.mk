@@ -21,11 +21,11 @@
 # definition file).
 #
 
-# inherit MI 8 Lite Colt Os device config
+# inherit MI 8 Lite Reloaded Os device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/colt_platina.mk
+    $(LOCAL_DIR)/reloaded_platina.mk
 
 COMMON_LUNCH_CHOICES := \
-    colt_platina-eng \
-    colt_platina-userdebug \
-    colt_platina-user
+    reloaded_platina-eng \
+    reloaded_platina-userdebug \
+    reloaded_platina-user

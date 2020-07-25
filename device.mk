@@ -86,7 +86,7 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, vendor/xiaomi/platina/platina-vendor.mk)
 
 # AOSP DEVICE
-PRODUCT_NAME := aosp_platina
+PRODUCT_NAME := reloaded_platina
 PRODUCT_DEVICE := platina
 PRODUCT_MODEL := Mi 8 Lite (AOSP)
 PRODUCT_BRAND := Xiaomi
